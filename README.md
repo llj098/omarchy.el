@@ -35,6 +35,7 @@ omarchy.el/
 ├── omarchy-themes.el     — shared theme library
 └── themes/
     ├── rose-pine-theme.el
+    ├── rose-pine-dawn-theme.el
     ├── osaka-jade-theme.el
     ├── flexoki-light-theme.el
     ├── catppuccin-mocha-theme.el
@@ -53,7 +54,8 @@ omarchy.el/
 |---|---|
 | `omarchy.el` | Core package: CLI integration, theme/font pickers, hook installer, desktop toggles, `omarchy-init` |
 | `omarchy-themes.el` | Shared library for the bundled themes; registers `themes/` with `custom-theme-load-path` and defines the `omarchy-themes` customize group |
-| `themes/rose-pine-theme.el` | Rose Pine Dawn, derived from Modus Operandi |
+| `themes/rose-pine-theme.el` | Original upstream Rose Pine theme |
+| `themes/rose-pine-dawn-theme.el` | Rose Pine Dawn, derived from Modus Operandi |
 | `themes/osaka-jade-theme.el` | Osaka Jade, derived from Modus Vivendi (mirrors `bamboo.nvim` *vulgaris*) |
 | `themes/flexoki-light-theme.el` | Flexoki Light, derived from Modus Operandi Tinted |
 | `themes/catppuccin-mocha-theme.el` | Catppuccin Mocha (`catppuccin/nvim`) |
@@ -171,7 +173,7 @@ The themes added in 0.2.0 for Omarchy 4 have no separate upstream plugin — the
 
 | Theme | Symbol | Upstream | Highlights |
 |---|---|---|---|
-| Rose Pine Dawn | `rose-pine` | `rose-pine/neovim` | keyword pine · function rose · string gold · variable text upright |
+| Rose Pine Dawn | `rose-pine-dawn` | `rose-pine/neovim` | keyword pine · function rose · string gold · variable text upright |
 | Flexoki Light | `flexoki-light` | `crmsnbleyd/flexoki-emacs-theme` | keyword magenta · function orange · string cyan · variable blue |
 | Catppuccin Latte | `catppuccin-latte` | `catppuccin/nvim` latte | keyword mauve · function blue · string green · variable flamingo |
 
@@ -213,7 +215,7 @@ All 13 bundled themes register their `<theme>-palette-overrides` defcustoms unde
 **Colors** — `<theme>-palette-overrides` changes any palette slot without editing the theme file. See [Modus's palette override guide][modus-overrides] for all available semantic slot names (`comment`, `keyword`, `fnname`, `string`, `bg-region`, `fg-heading-1`, etc.).
 
 ```elisp
-(setq rose-pine-palette-overrides
+(setq rose-pine-dawn-palette-overrides
       '((comment   "#8b8199")    ; nudge comments brighter
         (bg-region "#e4d7c7")))   ; warmer selection
 ```
@@ -322,7 +324,7 @@ The full default `omarchy-theme-map` (as shipped) — every entry points at a th
 "Nord"             -> nord
 "Osaka Jade"       -> osaka-jade
 "Ristretto"        -> ristretto
-"Rose Pine"        -> rose-pine
+"Rose Pine"        -> rose-pine-dawn
 "Tokyo Night"      -> tokyo-night
 ```
 

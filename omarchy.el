@@ -73,7 +73,7 @@ Set this to a theme that is guaranteed to be loadable in your config."
     ("Osaka Jade"       . osaka-jade)
     ("Retro 82"         . retro-82)
     ("Ristretto"        . ristretto)
-    ("Rose Pine"        . rose-pine)
+    ("Rose Pine"        . rose-pine-dawn)
     ("Solitude"         . solitude)
     ("Tokyo Night"      . tokyo-night)
     ("Vantablack"       . vantablack)

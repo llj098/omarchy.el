@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Added a dedicated Modus-derived `rose-pine-dawn` theme and mapped Omarchy's Rose Pine selection to it.
+
 ## [0.2.0] — 2026-08-16
 
 Support for **Omarchy 4 (Quattro)**.
